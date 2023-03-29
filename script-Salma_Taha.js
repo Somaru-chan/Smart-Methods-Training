@@ -3,7 +3,7 @@ click_to_convert.addEventListener('click', function() {
     window.SpeechRecognition = window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
 
-    recognition.lang = "ar-SA";
+    recognition.lang = "en-US";
 
     recognition.addEventListener('result', e=>{
         const transcript = Array.from(e.results)
